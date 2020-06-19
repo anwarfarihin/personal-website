@@ -1,11 +1,11 @@
 .App {
   text-align: center;
   font-family: SourceSansPro;
-  margin: 0% 15%;
+  margin: auto;
 }
 
 body {
-  background-color: #182b25;
+  background-color: var(--bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,55 +13,121 @@ body {
   justify-content: center;
   font-size: 1em;
   font-family: MontSerrat;
-  color: #fff9d8;
+  color: var(--text-color);
+}
+/* Section title */
+.section-title {
+  letter-spacing: 0.5em;
+  font-style: italic;
+  font-size: 1.3em;
+  text-align: left;
+}
+/* Navbar */
+.main-navbar {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 5px;
+  line-height: 0.5em;
+  text-align: right;
+  float: right;
+  right: 10px;
+}
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+.navbar a:hover {
+  text-align: end;
+  font-size: 1.5em;
+}
+.navbar a.active {
+  font-weight: bold;
+}
+.current-navbar {
+  position: fixed;
+  top: 5px;
+  left: 20px;
+}
+.rotated {
+  transform: rotate(90deg);
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin-top: 1.5em;
+}
+.logo {
+  font-family: SourceSansPro;
+  font-size: 2em;
+  font-weight: bold;
+  margin-block-end: 0;
+  margin-block-start: 10px;
+}
+.a-logo {
+  color: var(--bg-color);
+  text-shadow: var(--text-color) 0 0 1px, var(--text-color) 0 0 1px,
+    var(--text-color) 0 0 1px, var(--text-color) 0 0 1px,
+    var(--text-color) 0 0 1px, var(--text-color) 0 0 1px,
+    var(--text-color) 0 0 1px, var(--text-color) 0 0 1px,
+    var(--text-color) 0 0 1px;
 }
 
+/* Home */
 .home {
-  border: 1px solid #fff9d8;
+  margin: auto;
+  border: 1px solid var(--text-color);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.55fr 0.45fr;
   padding: 2%;
   height: 100%;
-  width: 100%;
+  width: 75%;
 }
 .home-left {
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
 .anwar {
-  font-family: SourceSansPro;
+  font-family: SourceSansPro-Black;
   font-style: italic;
   font-weight: bold;
-  font-size: 3em;
-  line-height: 126px;
-  letter-spacing: 0.26em;
+  font-size: 3.8em;
+  line-height: 100px;
+  letter-spacing: 0.3em;
   grid-column: 1;
   margin-block-start: 0em;
   margin-block-end: 0em;
+  color: var(--bg-color);
+  text-shadow: var(--text-color) 0 0 1px, var(--text-color) 0 0 1px,
+    var(--text-color) 0 0 1px, var(--text-color) 0 0 1px,
+    var(--text-color) 0 0 1px, var(--text-color) 0 0 1px,
+    var(--text-color) 0 0 1px, var(--text-color) 0 0 1px,
+    var(--text-color) 0 0 1px;
+  position: relative;
+  left: -65px;
+  top: 40px;
 }
 .farihin {
   font-family: SourceSansPro;
   font-weight: bold;
-  font-size: 6em;
+  font-size: 7em;
   grid-column: 1;
   margin-block-start: 0em;
   margin-block-end: 0em;
+  position: relative;
+  left: 0px;
+  top: -20px;
 }
 .home-right {
+  display: table;
   grid-column: 2;
   font-family: MontSerrat;
   line-height: 24px;
   text-align: left;
   justify-content: center;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
   height: 100%;
   width: 100%;
 }
 .desc {
-  justify-content: center;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  height: 100%;
-  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }

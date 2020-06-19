@@ -12,10 +12,20 @@ code {
     monospace;
 }
 
+:root {
+  --text-color: #fff9d8;
+  --bg-color: #182b25;
+}
+
 @font-face {
   font-family: "SourceSansPro";
   src: local("SourceSansPro"),
     url(./fonts/SourceSansPro-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: local("SourceSansPro"),
+    url(./fonts/SourceSansPro-Black.ttf) format("truetype");
 }
 @font-face {
   font-family: "Montserrat";
